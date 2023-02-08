@@ -1,7 +1,7 @@
 window.onload = function() {
-    let nextArrow = document.getElementById('next'),
-    backArrow = document.getElementById('back'),
-    backImg = document.getElementById('back-img'),
+    let nextArrow = document.getElementById('next'), 
+	backArrow = document.getElementById('back'), 
+	backImg = document.getElementById('back-img'),
     rotation = document.getElementById('rotation'),
     newLocations = 0,
 	currentId = 0,
