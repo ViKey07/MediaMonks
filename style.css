@@ -7,22 +7,10 @@ a, a:hover, a:visited {
 	text-decoration: none;
 }
 
-@font-face {
-	font-family: 'Klavika', 'BlinkMacSystemFont', "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
-	src: url('../font/klavika/klavika-regular-webfont.eot') format('eot'),
-			 url('../font/klavika/klavika-regular-webfont.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Klavika-Light', 'BlinkMacSystemFont', "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
-	src: url('../font/klavika/klavika-light-webfont.eot') format('eot'),
-			 url('../font/klavika/klavika-light-webfont.woff') format('woff');
-}
-
 body {
 	margin: 0;
 	background: #000;
-	font-family: 'Klavika';
+	font-family: 'Poppins';
 	color: #fff;
     /* display: flex; */
 }
@@ -38,7 +26,7 @@ body {
 	top: 0;
 	height: 100%;
 	z-index: 10;
-	transition: 1100ms ease-in-out;
+	transition: 550ms ease-in-out;
 }
 
 #next, #back {
@@ -51,7 +39,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 150ms ease-in-out;
+	/* transition: 75ms ease-in-out; */
 }
 
 #next {
@@ -112,16 +100,16 @@ body {
 	align-items: center;
 }
 
-.listitem--clicked {
+.li-click {
 	background: #fff;
 	margin: 1px;
 }
 
 section {
-	transition: 500ms ease-in-out;
+	transition: 250ms ease-in-out;
 }
 
-#section-0 {
+#sec-0 {
 	opacity: 0;
 	position: fixed;
 	top: 25px;
@@ -129,7 +117,7 @@ section {
 	z-index: 100;
 }
 
-#section-1, #section-2, #section-6, #section-7, #section-8 {
+#sec-1, #sec-2, #sec-6, #sec-7, #sec-8 {
 	position: fixed;
 	opacity: 0;
 	top: 40%;
@@ -137,7 +125,7 @@ section {
 	z-index: 100;
 }
 
-#section-3, #section-4, #section-5 {
+#sec-3, #sec-4, #sec-5 {
 	position: fixed;
 	opacity: 0;
 	top: 40%;
@@ -145,7 +133,7 @@ section {
 	z-index: 100;
 }
 
-#section-9 {
+#sec-9 {
 	position: fixed;
 	top: 25px;
 	right: 25px;
@@ -156,55 +144,56 @@ section {
 	text-align: right;
 }
 
-.section-title {
+.sec-title {
 	font-size: 60px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin: 0;
 	border-bottom: 1px solid #fff;
+	/* z-index: 1; */
 }
 
-.section-para {
+.sec-para {
 	font-size: 14px;
-	font-family: 'Klavika-Light';
+	font-family: 'Poppins';
 	position: fixed;
 	left: 25px;
 	bottom: 110px;
 	z-index: 100;
 }
 
-.section-desc {
+.sec-desc {
 	font-size: 14px;
-	font-family: 'Klavika-Light';
+	font-family: 'Poppins';
 	position: fixed;
 	bottom: 25px;
 	left: 300px;
 }
 
-.section-join {
+.sec-join {
 	position: fixed;
 	right: 25px;
 	top: 40%;
 	font-size: 14px;
-	font-family: 'Klavika-Light';
+	font-family: 'Poppins';
 }
 
-.section-join a {
+.sec-join a {
 	border-bottom: 1px solid #fff;
 }
 
-.section-social {
+.sec-social {
 	top: 50%;
 	position: fixed;
 	right: 25px;
 	list-style-type: none;
 	padding: 0;
 	font-size: 14px;
-	font-family: 'Klavika-Light';
+	font-family: 'Poppins';
 }
 
-.section-social li {
+.sec-social li {
 	display: inline-block;
 	margin-left: 20px;
 }
